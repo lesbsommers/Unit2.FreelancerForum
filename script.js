@@ -18,7 +18,7 @@
 
  // this function renders the list of freelancers as table rows
 function renderFreelancers() {
-    const list = document.getElementById(".freelaner-list");
+    const list = document.getElementById("freelaner-list");
     list.innerHTML = ""; // clears any previous rows in the table.
 
     // forEach() method loops through each freelancer object. 
@@ -55,7 +55,7 @@ function renderFreelancers() {
 // an HTML element with the ID #average-price
 function updateAveragePrice() {
     const average = freelancers.reduce((sum, f) => sum + f.price, 0) / freelancers.length; // the reduce() method is used to sum the price of all freelancers.
-    document.getElementById("#average-price").textContent = average.toFixed(2);
+    document.getElementById("average-price").textContent = average.toFixed(2);
 }
 
 // this function adds a random freelancer to the freelancers array and re-renders the table.
